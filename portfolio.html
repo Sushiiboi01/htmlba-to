@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al-John Wahid - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .section-title {
+            font-size: clamp(2.5rem, 8vw, 6rem);
+            font-weight: 900;
+            line-height: 0.9;
+            letter-spacing: -0.02em;
+        }
+
+        .portfolio-v2 {
+            background-color: #000000;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .marquee-container {
+            overflow: hidden;
+            white-space: nowrap;
+            background: #000000;
+            padding: 15px 0;
+            margin-bottom: 0;
+            margin-top: 80px;
+        }
+
+        .marquee-content {
+            display: inline-block;
+            animation: marquee 30s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .marquee-content span {
+            display: inline-block;
+            white-space: nowrap;
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 500;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .fixed-marquee {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100vw;
+            z-index: 1000;
+            background: rgba(218, 169, 169, 0);
+            box-shadow: 0 -2px 8px rgba(0,0,0,0.08);
+            color: #111;
+        }
+
+        .marquee-container {
+            margin-bottom: 0 !important;
+        }
+    </style>
+</head>
+<body class="bg-black text-gray-200">
+    <nav class="fixed top-0 w-full z-50 bg-black bg-opacity-50 backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <a href="index.html" class="text-xl font-bold text-white">AL-JOHN</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-white hover:text-gray-300 transition-colors">Home</a>
+                    <a href="about.html" class="text-white hover:text-gray-300 transition-colors">About</a>
+                    <a href="services.html" class="text-white hover:text-gray-300 transition-colors">Services</a>
+                    <a href="portfolio.html" class="text-white hover:text-gray-300 transition-colors">Portfolio</a>
+                    <a href="contact.html" class="text-white hover:text-gray-300 transition-colors">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-white">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="marquee-container fixed-marquee">
+        <div class="marquee-content">
+            <span>Philippines: <span id="philippines-time">--:--</span> <span id="philippines-date">---</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;US Eastern: <span id="us-time">--:--</span> <span id="us-date">---</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Australia: <span id="australia-time">--:--</span> <span id="australia-date">---</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>© 2025 Al-John Wahid. All rights reserved.</span>
+        </div>
+    </div>
+
+    <div id="mobile-menu" class="fixed inset-0 z-40 bg-black bg-opacity-95 hidden">
+        <div class="flex flex-col items-center justify-center h-full space-y-8 text-2xl">
+            <a href="index.html" class="mobile-menu-link text-white hover:text-gray-300 transition-colors">Home</a>
+            <a href="about.html" class="mobile-menu-link text-white hover:text-gray-300 transition-colors">About</a>
+            <a href="services.html" class="mobile-menu-link text-white hover:text-gray-300 transition-colors">Services</a>
+            <a href="portfolio.html" class="mobile-menu-link text-white hover:text-gray-300 transition-colors">Portfolio</a>
+            <a href="contact.html" class="mobile-menu-link text-white hover:text-gray-300 transition-colors">Contact</a>
+        </div>
+    </div>
+
+    <section class="portfolio-v2 min-h-screen bg-black flex justify-center items-center text-center" style="padding-top: 140px; padding-bottom: 80px;">
+        <div class="max-w-4xl mx-auto px-4">
+            
+            <div data-aos="fade-down">
+                <h2 class="text-white" style="font-size: clamp(4rem, 15vw, 9rem); font-weight: 900; line-height: 1; letter-spacing: -0.02em;">
+                    PROJECT<br>PORTFOLIO
+                </h2>
+            </div>
+            
+           
+            <div class="mt-8" data-aos="fade-up" data-aos-delay="200">
+                <p class="text-xl md:text-2xl leading-relaxed text-gray-300 max-w-3xl mx-auto">
+                    Here's a glimpse of my creations. This showcases my designs for my brother's small business as well as my personal projects. I enjoy crafting simple yet attractive designs. I always look forward to tackling new projects!
+                </p>
+                <p class="text-lg md:text-xl leading-relaxed text-gray-400 max-w-3xl mx-auto mt-6">
+                    Click the button to see the projects I've created.
+                </p>
+                <div class="mt-8 flex justify-center">
+                    <a href="https://aljohnwahid.my.canva.site/dagrlxhxl-8" target="_blank" rel="noopener noreferrer"
+                        class="p-0 m-0 flex items-center justify-center hover:opacity-80 transition-opacity duration-200"
+                        aria-label="View My Canva Portfolio">
+                        <svg width="28" height="28" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="24" fill="white"/>
+                            <text x="50%" y="58%" text-anchor="middle" fill="black" font-size="20" font-family="Arial, Helvetica, sans-serif" dy=".3em">C</text>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        function updateClocks() {
+            const now = new Date();
+            const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+            
+            const philippinesTime = new Date(utc + (8 * 60 * 60 * 1000));
+            const philippinesTimeElement = document.getElementById('philippines-time');
+            const philippinesDateElement = document.getElementById('philippines-date');
+            
+            if (philippinesTimeElement && philippinesDateElement) {
+                philippinesTimeElement.textContent = philippinesTime.toLocaleTimeString('en-US', {
+                    hour: 'numeric',
+                    minute: '2-digit',
+                    hour12: true
+                });
+                philippinesDateElement.textContent = philippinesTime.toLocaleDateString('en-US', {
+                    weekday: 'short',
+                    month: 'short',
+                    day: 'numeric'
+                });
+            }
+            
+            const usTime = new Date(utc + (-5 * 60 * 60 * 1000)); 
+            const usTimeElement = document.getElementById('us-time');
+            const usDateElement = document.getElementById('us-date');
+            
+            if (usTimeElement && usDateElement) {
+                usTimeElement.textContent = usTime.toLocaleTimeString('en-US', {
+                    hour: 'numeric',
+                    minute: '2-digit',
+                    hour12: true
+                });
+                usDateElement.textContent = usTime.toLocaleDateString('en-US', {
+                    weekday: 'short',
+                    month: 'short',
+                    day: 'numeric'
+                });
+            }
+            
+            const australiaTime = new Date(utc + (10 * 60 * 60 * 1000));
+            const australiaTimeElement = document.getElementById('australia-time');
+            const australiaDateElement = document.getElementById('australia-date');
+            
+            if (australiaTimeElement && australiaDateElement) {
+                australiaTimeElement.textContent = australiaTime.toLocaleTimeString('en-US', {
+                    hour: 'numeric',
+                    minute: '2-digit',
+                    hour12: true
+                });
+                australiaDateElement.textContent = australiaTime.toLocaleDateString('en-US', {
+                    weekday: 'short',
+                    month: 'short',
+                    day: 'numeric'
+                });
+            }
+        }
+
+        updateClocks();
+        setInterval(updateClocks, 1000);
+    </script>
+</body>
+</html> 

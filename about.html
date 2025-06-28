@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al-John Wahid - About</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .section-title {
+            font-size: clamp(2.5rem, 8vw, 6rem);
+            font-weight: 900;
+            line-height: 0.9;
+            letter-spacing: -0.02em;
+        }
+
+        .about-v2 {
+            background-color: #000000;
+            position: relative;
+            overflow: hidden;
+        }
+        .about-v2-image {
+            position: absolute;
+            bottom: 0;
+            right: -5%;
+            width: 45%;
+            max-width: 600px;
+            z-index: 10;
+        }
+
+        .marquee-container {
+            overflow: hidden;
+            white-space: nowrap;
+            background: #000000;
+            padding: 15px 0;
+            margin-bottom: 0;
+            margin-top: 80px;
+        }
+
+        .marquee-content {
+            display: inline-block;
+            animation: marquee 30s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .marquee-content span {
+            display: inline-block;
+            white-space: nowrap;
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 500;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .fixed-marquee {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100vw;
+            z-index: 1000;
+            background: rgba(218, 169, 169, 0);
+            box-shadow: 0 -2px 8px rgba(0,0,0,0.08);
+            color: #111;
+        }
+
+        .marquee-container {
+            margin-bottom: 0 !important;
+        }
+    </style>
+</head>
+<body class="bg-black text-gray-200">
+    <nav class="fixed top-0 w-full z-50 bg-black bg-opacity-50 backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <a href="index.html" class="text-xl font-bold text-white">AL-JOHN</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-white hover:text-gray-300 transition-colors">Home</a>
+                    <a href="about.html" class="text-white hover:text-gray-300 transition-colors">About</a>
+                    <a href="services.html" class="text-white hover:text-gray-300 transition-colors">Services</a>
+                    <a href="portfolio.html" class="text-white hover:text-gray-300 transition-colors">Portfolio</a>
+                    <a href="contact.html" class="text-white hover:text-gray-300 transition-colors">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-white">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="marquee-container fixed-marquee">
+        <div class="marquee-content">
+            <span>Philippines: <span id="philippines-time">--:--</span> <span id="philippines-date">---</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;US Eastern: <span id="us-time">--:--</span> <span id="us-date">---</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Australia: <span id="australia-time">--:--</span> <span id="australia-date">---</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>© 2025 Al-John Wahid. All rights reserved.</span>
+        </div>
+    </div>
+
+    <div id="mobile-menu" class="fixed inset-0 z-40 bg-black bg-opacity-95 hidden">
+        <div class="flex flex-col items-center justify-center h-full space-y-8 text-2xl">
+            <a href="index.html" class="mobile-menu-link text-white hover:text-gray-300 transition-colors">Home</a>
+            <a href="about.html" class="mobile-menu-link text-white hover:text-gray-300 transition-colors">About</a>
+            <a href="services.html" class="mobile-menu-link text-white hover:text-gray-300 transition-colors">Services</a>
+            <a href="portfolio.html" class="mobile-menu-link text-white hover:text-gray-300 transition-colors">Portfolio</a>
+            <a href="contact.html" class="mobile-menu-link text-white hover:text-gray-300 transition-colors">Contact</a>
+        </div>
+    </div>
+
+    <section class="min-h-screen flex items-center bg-black" style="padding-top: 140px;">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="flex flex-col items-center justify-center text-center min-h-[60vh]">
+                <div class="z-20" data-aos="fade-down">
+                    <h2 class="text-white mb-8" style="font-size: clamp(4rem, 12vw, 8rem); font-weight: 900; line-height: 0.9; letter-spacing: -0.02em;">
+                        ABOUT ME
+                    </h2>
+                    <div class="text-lg md:text-xl leading-relaxed text-gray-300 max-w-2xl mx-auto">
+                        <p>
+                            I began my career in graphic design by assisting my brother's small business, Holy Kicks. I was motivated by that experience to produce designs that are both lovely and straightforward. I am now enthusiastic to assist small and large businesses in bringing their concepts to life as a graphic designer and virtual assistant. The tools I've used for being a self taught virtual assistant are google sheets, google workspace, and calendar.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-gray-400">
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        function updateClocks() {
+            const now = new Date();
+            const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+            
+            const philippinesTime = new Date(utc + (8 * 60 * 60 * 1000));
+            const philippinesTimeElement = document.getElementById('philippines-time');
+            const philippinesDateElement = document.getElementById('philippines-date');
+            
+            if (philippinesTimeElement && philippinesDateElement) {
+                philippinesTimeElement.textContent = philippinesTime.toLocaleTimeString('en-US', {
+                    hour: 'numeric',
+                    minute: '2-digit',
+                    hour12: true
+                });
+                philippinesDateElement.textContent = philippinesTime.toLocaleDateString('en-US', {
+                    weekday: 'short',
+                    month: 'short',
+                    day: 'numeric'
+                });
+            }
+            
+            const usTime = new Date(utc + (-5 * 60 * 60 * 1000)); 
+            const usTimeElement = document.getElementById('us-time');
+            const usDateElement = document.getElementById('us-date');
+            
+            if (usTimeElement && usDateElement) {
+                usTimeElement.textContent = usTime.toLocaleTimeString('en-US', {
+                    hour: 'numeric',
+                    minute: '2-digit',
+                    hour12: true
+                });
+                usDateElement.textContent = usTime.toLocaleDateString('en-US', {
+                    weekday: 'short',
+                    month: 'short',
+                    day: 'numeric'
+                });
+            }
+            
+            const australiaTime = new Date(utc + (10 * 60 * 60 * 1000));
+            const australiaTimeElement = document.getElementById('australia-time');
+            const australiaDateElement = document.getElementById('australia-date');
+            
+            if (australiaTimeElement && australiaDateElement) {
+                australiaTimeElement.textContent = australiaTime.toLocaleTimeString('en-US', {
+                    hour: 'numeric',
+                    minute: '2-digit',
+                    hour12: true
+                });
+                australiaDateElement.textContent = australiaTime.toLocaleDateString('en-US', {
+                    weekday: 'short',
+                    month: 'short',
+                    day: 'numeric'
+                });
+            }
+        }
+
+        updateClocks();
+        setInterval(updateClocks, 1000);
+    </script>
+</body>
+</html> 
